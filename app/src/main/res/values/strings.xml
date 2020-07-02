@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">ClaseUno</string>
+    <string name="titulo_main">Ésto es una Aplicación Android</string>
+    <string name="ingresa_tu_nombre">Ingresa tu Nombre</string>_"
+    <string name="saludar">Saludar</string>
+    <string name="salir">Salir</string>
+    <string name="registro">Registro</string>
+    <string name="menu">menu</string>
+
+
+</resources>

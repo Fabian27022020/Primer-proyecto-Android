@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    // ACA SE INTRODUCE EL TITULO DE LA APP O FUNCIONALIDAD
+    <TextView
+        android:id="@+id/tvTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="@string/titulo_main"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    // ESTO ES UNA CAJA DE TEXTO (EDIT TEXT)
+
+    <EditText
+        android:id="@+id/etSaludo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:hint="@string/ingresa_tu_nombre"
+        app:layout_constraintEnd_toEndOf="@+id/tvTitulo"
+        app:layout_constraintStart_toStartOf="@+id/tvTitulo"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitulo" />
+
+    // ACA SE INTRODUCEN BOTONES PARA DIFERENTES FUNCIONALIDADES
+    //BOTON PARA SALUDAR
+    <Button
+        android:id="@+id/btnSaludo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/saludar"
+        app:layout_constraintEnd_toEndOf="@+id/etSaludo"
+        app:layout_constraintStart_toStartOf="@+id/etSaludo"
+        app:layout_constraintTop_toBottomOf="@+id/etSaludo"
+        android:layout_marginTop="30dp"
+        />
+
+    // BOTON PARA INGRESAR A UN REGISTRO
+    <Button
+        android:id="@+id/btnRegistro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/registro"
+        android:layout_marginTop="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnSaludo" />
+
+    //BOTON PARA INGRESAR A UN MENU
+    <Button
+        android:id="@+id/btnMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/menu"
+        android:layout_marginTop="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnRegistro" />
+
+    //BOTON PARA SALIR DE LA APP
+    <Button
+        android:id="@+id/btnSalir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/salir"
+        android:layout_marginTop="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnMenu" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
